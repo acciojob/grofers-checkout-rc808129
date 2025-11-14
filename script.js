@@ -5,6 +5,9 @@ const getSum = () => {
         sum += parseFloat(priceElement.textContent);
     });
 
+	 // Total price ko #ans element mein set karna
+    document.getElementById('ans').textContent = `Total Price: ${sum}`; // Is line ko add kar
+
     // Naya row aur cells create karna
     const newRow = document.createElement('tr');
     
